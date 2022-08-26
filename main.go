@@ -15,6 +15,9 @@ type Siswa struct {
 
 func main() {
 	var kelas = []*Siswa{}
+	if len(os.Args) <= 1 {
+		os.Exit(1)
+	}
 
 	var a, _ = strconv.Atoi(os.Args[1])
 
